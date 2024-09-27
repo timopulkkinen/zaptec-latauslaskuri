@@ -1,0 +1,42 @@
+{
+  "name": "latausetu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsup --publicDir",
+    "clean": "rm -rf dist",
+    "test": "npm run test:path test/unit/*.spec.ts"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "format": [
+      "esm"
+    ],
+    "dts": true,
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.10.8",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "tsup": "^8.0.1",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "exceljs": "^4.4.0",
+    "jest": "27.4.7",
+    "jsonpath-plus": "8.0.0",
+    "yargs": "^17.7.2"
+  }
+}

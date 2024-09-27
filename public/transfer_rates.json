@@ -1,0 +1,15 @@
+{
+  "ELENIA": {
+    "STANDARD": {
+      "STANDARD_RATE": 4.53
+    },
+    "NIGHT_TIME_REDUCED": {
+      "REDUCED_RATE": 2.13,
+      "STANDARD_RATE": 3.49
+    },
+    "SEASONAL_REDUCED": {
+      "REDUCED_RATE": 4.28,
+      "STANDARD_RATE": 2.13
+    }
+  }
+}
