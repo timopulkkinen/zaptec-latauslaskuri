@@ -1,4 +1,4 @@
-# Zaptec latausetu
+# Zaptec kuukausiraportti (latausetu)
 
 Simppeli skripti, jolla pystyy luomaan kuukausittaisen latauskustannusraportin .xlsx -muodossa Zaptecin APIa hyödyntäen.
 
@@ -14,4 +14,17 @@ ZAPTEC_USERNAME=apiuse ZAPTEC_PASSWORD=apipassword node dist/index.js -y 2024 -m
 - `-f`: Kiinteä sähkön hinta / kWh euroissa 
 - `-o`: Tulostiedoston nimi, esim xyz.xlsx (pakollinen)
 - `-p`: Siirtohinnan sopimustyyppi [STANDARD, NIGHT_TIME_REDUCED, SEASONAL_REDUCED] = [perus, yösähkö, vuodenaikasähkö]
-- `-d`: Siirtoyhtiö, jonka hintoja käytetään. Näitä voi lisätä `public/transfer-prices.json` tiedostoon, vakiona löytyy Elenia.
+- `-d`: Siirtoyhtiö, jonka hintoja käytetään. Näitä voi lisätä `public/transfer_rates.json` tiedostoon, vakiona löytyy Elenia.
+
+
+# Kääntäminen ja riippuvuuksien asennus
+
+Asenna NodeJS ja npm, jonka jälkeen suorita seuraavat komennot:
+```bash
+npm install
+npm run build
+```
+
+Testattu Node.js versiolla v20.13.1. Toimii MacOS:lla, muista käyttiksistä ei tietoa.
+
+Lisenssi MIT License. Tekijä ei ota vastuuta mistään vahingoista jne.
