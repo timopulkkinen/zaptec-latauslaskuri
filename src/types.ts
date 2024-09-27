@@ -12,7 +12,7 @@ export type HourlyPrice = {
 
 // c / kWh
 export const ELECTRICITY_TAX = 2.2253;
-export const VAT = 1.24;
+export const VAT = 1.255;
 const enum Distributors {
   ELENIA = "ELENIA",
   FORTUM = "FORTUM",
