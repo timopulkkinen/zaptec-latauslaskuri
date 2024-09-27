@@ -1,6 +1,7 @@
 # Zaptec kuukausiraportti (latausetu)
 
 Simppeli skripti, jolla pystyy luomaan kuukausittaisen latauskustannusraportin .xlsx -muodossa Zaptecin APIa hyödyntäen.
+Nordpoolin hintatiedot haetaan osoitteesta http://sahkotin.fi/prices , propsit tekijälle.
 
 Esimerkki komentorivistä:
 ```bash
@@ -27,4 +28,4 @@ npm run build
 
 Testattu Node.js versiolla v20.13.1. Toimii MacOS:lla, muista käyttiksistä ei tietoa.
 
-Lisenssi MIT License. Tekijä ei ota vastuuta mistään vahingoista jne.
+Lisenssi MIT License. Tekijä ei ota vastuuta mistään vahingoista jne. Koodia saa vapaasti käyttää, forkata, muunnella jne.
