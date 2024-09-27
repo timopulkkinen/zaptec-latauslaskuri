@@ -3,6 +3,8 @@
 Simppeli skripti, jolla pystyy luomaan kuukausittaisen latauskustannusraportin .xlsx -muodossa Zaptecin APIa hyödyntäen.
 Nordpoolin hintatiedot haetaan osoitteesta http://sahkotin.fi/prices , propsit tekijälle.
 
+Sähkövero ja ALV-prosentti on määritelty vakioksi `src/types.ts` -tiedostossa. Voisi olla komentoriviparametrikin, mutta eipä ehtinyt.
+
 Esimerkki komentorivistä:
 ```bash
 ZAPTEC_USERNAME=apiuse ZAPTEC_PASSWORD=apipassword node dist/index.js -y 2024 -m 08 -e 0.363 -o charging-report-202408.xlsx    
